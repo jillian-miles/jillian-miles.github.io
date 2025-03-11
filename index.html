@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>rajee ganesan</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+    <div id="logo"><h1>RAJEE<a href="#">GANESAN</a> </h1></div>
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current"><a href="index.html">home</a></li>
+          <li><a href="resume.html">research</a></li>
+          <li><a href="writing.html">writing</a></li>
+          <li><a href="film.html">film</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div id="gallery">
+          <ul class="images">
+            <li class="show"><img width="450" height="450" src="images/rajee3.jpg" alt="photo_one" /></li>
+            <li ><img width="450" height="450" src="images/kayak3.jpg" alt="photo_two_heic" /></li>
+            <li ><img width="450" height="450" src="images/hike3.jpg" alt="photo_three_heic" /></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <br>
+        <h3>I'm a third year Biological Sciences Ph.D. candidate at Carnegie Mellon University in Pittsburgh. My thesis studies vocal learning at a computational level, specifically enhancer evolution and comparative genomics across mammalian and avian clades.</h3>
+        <br>
+        <h3>I am from North Carolina, and I completed my undergraduate degree at UNC Chapel Hill. When I'm not in the lab, I'm <a href="https://open.spotify.com/user/rajeeganesan" target="_blank">listening to music</a> or at a live show, writing or hiking.</h3>
+        <br>
+        <h3> For more information on my previous experience, you can download my <a href="rganesan_cv.pdf" target="_blank">curriculum vitae</a> or my <a href="rganesan_resume.pdf" target="_blank">resume</a> in pdf form here (last updated July 2024). The best way to contact me is at rganesan at andrew.cmu.edu :)</h3>
+        <br>
+        <hr> this website was a "fun side project to learn HTML" turned into a severe work in progress.
+        
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p><a href="index.html">home</a> | <a href="resume.html">research</a> | <a href="writing.html">writing</a> | <a href="film.html">film</a> 
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
+</body>
+</html>
