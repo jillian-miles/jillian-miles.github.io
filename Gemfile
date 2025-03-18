@@ -1,13 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'github-pages', group: :jekyll_plugins  # Ensure this is included for compatibility with GitHub Pages
 
-group :jekyll_plugins do
-  gem 'jekyll-gist'
-  gem 'jekyll-paginate'
-  gem "jekyll-asciidoc"
-end
-
+# Optional additional plugins if needed
+gem 'jekyll-gist'
+gem 'jekyll-paginate'
+gem "jekyll-asciidoc"
 gem 'asciidoctor', '~> 1.5.4'
 gem 'coderay', '1.1.1'
 
