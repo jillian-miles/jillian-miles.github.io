@@ -29,13 +29,17 @@
         }
 
         header {
-            background-color: white;
-            border-bottom: 1px solid #eee;
-            padding: 20px 0;
-            margin-bottom: 40px;
             display: flex;
-            align-items: center;
-            gap: 20px;
+            align-items: center; /* Keeps the image and text aligned */
+            justify-content: center; /* Centers everything horizontally */
+            text-align: center; /* Centers the text */
+            gap: 20px; /* Adds spacing between the image and text */
+            flex-wrap: wrap; /* Ensures responsiveness */
+        }
+        
+        header div {
+            flex: 1; /* Allows the text block to take up available space */
+            text-align: center; /* Centers text inside its block */
         }
 
         .profile-pic {
@@ -125,7 +129,7 @@
     <header class="container">
         <img src="images/profilepic" alt="Jillian Miles" class="profile-pic">
         <div>
-            <h1>Jillian E. Miles</h1>
+            <h1>Jillian Miles</h1>
             <div class="subtitle">Workers and Local Communities | Energy Transition | Research for Policy</div>
             <nav>
                 <a href="index.html">Home</a>
@@ -147,6 +151,7 @@
         <h2>Latest Publication</h2>
         <div class="publication">
             <h3>When the Energy Transition Comes to Town</h3>
+            <div class="meta">J.E. Miles, C. Combemale, V.J. Karplus</div>
             <div class="meta">Issues in Science and Technology, 2023</div>
             <p>Thousands of American towns are losing jobs in fossil fuels. More sophisticated analytical tools could help communities marshal their resources for a better future. </p>
             <a href="https://issues.org/energy-transition-analytical-tools-miles-combemale-karplus/"> Read Full Paper</a>
