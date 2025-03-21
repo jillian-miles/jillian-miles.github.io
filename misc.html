@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miscellaneous Endeavors - Jillian Miles</title>
+    <style>
+        :root {
+            --primary-color: #2F4F4F;
+            --secondary-color: #556B2F;
+            --accent-color: #6B8E23;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
 
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        header div {
+            flex: 1;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            margin-top: 10px;
+        }
+
+        .section {
+            background-color: var(--light-bg);
+            padding: 30px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            font-size: 2em;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+
+        .link-card {
+            background-color: var(--light-bg);
+            padding: 20px;
+            border-radius: 5px;
+            width: 30%;
+        }
+
+        .link-card h3 {
+            font-size: 1.6em;
+            color: var(--primary-color);
+        }
+
+        .link-card p {
+            color: var(--secondary-color);
+            font-size: 1.1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <img src="images/profilepic" alt="Jillian Miles" class="profile-pic">
+        <div>
+            <h1>Jillian E. Miles</h1>
+            <div class="subtitle">Workers and Local Communities | Energy Transition | Research for Policy</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Overview Box -->
+        <div class="section">
+            <h2>Overview</h2>
+            <p>Welcome to the miscellaneous endeavors section of my website. Here, I share some of my other passions and creative pursuits outside of my research. You will find details about my work in stained glass, choreography, and the personal blog where I reflect on various interests.</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="links">
+            <!-- Stained Glass Section -->
+            <div class="link-card">
+                <h3>Stained Glass</h3>
+                <p>Explore my journey into the art of stained glass, with details about my projects and process.</p>
+                <a href="stained_glass.html">Visit Stained Glass Gallery</a>
+            </div>
+
+            <!-- Choreography Section -->
+            <div class="link-card">
+                <h3>Choreography</h3>
+                <p>Learn more about my choreography work, including past performances and creative projects.</p>
+                <a href="choreography.html">View Choreography Works</a>
+            </div>
+
+            <!-- Blog Section -->
+            <div class="link-card">
+                <h3>Blog</h3>
+                <p>Check out my blog, where I share reflections on creativity, life, and other interests.</p>
+                <a href="30before30.html">Visit Blog</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <a href="mailto:jmiles2@andrew.cmu.edu">jmiles2@andrew.cmu.edu</a>
+            <a href="https://www.linkedin.com/in/milesjillian">LinkedIn</a>
+            <a href="https://github.com/jillian-miles">GitHub</a>
+        </div>
+        <div class="container">
+            © 2025 Jillian Miles
+        </div>
+    </footer>
+</body>
+</html>
