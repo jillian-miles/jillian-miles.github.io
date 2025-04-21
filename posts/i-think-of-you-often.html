@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog Post One - Jillian Miles</title>
-  <link rel="stylesheet" href="../styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jillian Miles - Personal Blog</title>
+    <style>
+        :root {
+            --primary-color: #2F4F4F; /* Dark Slate Gray */
+            --secondary-color: #556B2F; /* Dark Olive Green */
+            --accent-color: #6B8E23; /* Olive Drab */
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            align-items: center; /* Keeps the image and text aligned */
+            justify-content: center; /* Centers everything horizontally */
+            text-align: center; /* Centers the text */
+            gap: 20px; /* Adds spacing between the image and text */
+            flex-wrap: wrap; /* Ensures responsiveness */
+        }
+        
+        header div {
+            flex: 1; /* Allows the text block to take up available space */
+            text-align: center; /* Centers text inside its block */
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            margin-top: 10px;
+        }
+
+        .featured-content {
+            background-color: var(--light-bg);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+
+        .publication {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-left: 3px solid var(--accent-color);
+            background-color: var(--light-bg);
+        }
+
+        .publication h3 {
+            margin: 0 0 10px 0;
+            color: var(--primary-color);
+        }
+
+        .publication .meta {
+            font-style: italic;
+            color: var(--secondary-color);
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 1px solid #eee;
+        }
+    </style>
 </head>
+
+
+
+
+
+
+  
 <body>
   <header class="container">
     <img src="../images/profilepic" alt="Jillian Miles" class="profile-pic" />
