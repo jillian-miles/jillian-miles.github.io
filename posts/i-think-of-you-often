@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Post One - Jillian Miles</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="container">
+    <img src="../images/profilepic" alt="Jillian Miles" class="profile-pic" />
+    <div>
+      <h1>30 "Essays" before I turn 30</h1>
+      <div class="subtitle">Personal Blog</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="section">
+      <img src="../images/profilepic" alt="attempt a" style="width: 100%; border-radius: 10px; margin-bottom: 20px;" />
+      <h2>I Think of You Often</h2>
+      <p><em>Posted on April 20, 2025</em></p>
+
+      <p>I am not sure this is a thing I necessarily want to readily admit, but as much as I live in the physical 4D space-time around me, I live within myself, my imagination, my memory an equal or greater amount. I’m someone who gets hit with intense waves of nostalgia on the daily, and (iconic pop album reference aside) future nostalgia also perpetrates my being regularly. While this can often take the form of reminiscing of seaside views from beaches long in my past or the actual tingling of feet felt again while discussing my lone brave bungee jump, it most often takes the form of a sigh in the heart while thinking of someone who is no longer in my life.</p>
+
+      <p>Keeping in touch with people is hard, as it takes a level of initiative that is so rarely found in my day-to-day in our current climate. Usually, I can rely on updates-en-masse from social media to know when friends or acquaintances alike from high school (or even earlier) get engaged or married. But that certainly isn’t a constant, especially as social media deteriorates from friends sharing lives to unnecessarily capitalistic algorithms and a who’s who of content creator profiles. Keeping in touch with people is hard, but, in some way, holding their memory with me is so very easy.</p>
+
+      <p>From around the age of 14, my life has become 4-year segments. High school, college, post-college in DC, and now grad school in Pittsburgh. Each has brought me new people who have all left permanent marks on me—my personality, my style, my humor, my wit. I am incredibly lucky to have been met largely with people who have changed my life significantly for the better, and I would not be who I am without my friends I struggled through high school with, or my first coworkers in consulting who taught me both how to make a PowerPoint pretty and how to hold my head high when talking to leadership.</p>
+
+      <p>And yet, not every relationship can last outside of the contexts they were built in, especially without the foresight of just how much initiative will be required. So when I talk about my rocks, and the people in my life who I have kept close, I am grateful to the effort I put in for my college friends, and I think fond thoughts from afar while remembering the people who held me while crying in high school stairwells, or those who tried to keep morale high by sharing podcasts and workouts in the pandemic over Skype and then Zoom. I don’t talk to them anymore. I wish I did, but naturally, as life intends, you cannot keep every friend you make, cannot continue to thank leaders you look up to, day after day. For someone like me, that task would be all-consuming and I frankly would get nothing else done.</p>
+
+      <p>What is not all-consuming is the time in my thoughts I grant to them all when on a nostalgia trip. I think about the girl I studied abroad with who gave me shampoo and conditioner after a flight misplaced half of our program’s luggage. I’ve watched her run marathons from my couch and spend even more time in Africa than I did after our initial journey. I’ll think about my best friend in middle school who ushered me off a bus crying after witnessing my “ex-boyfriend” fake ask out my other best friend as a prank. I remember how rough middle school was and how loyal she was to me despite our differences throughout it. I’ll remember my favorite high school English teacher, who looked at me with just the right amount of shame when I told him I didn’t read <em>Owen Meany</em> because of a physics test and allowed me space to explore my awkwardness fully and unashamedly by the end of his class.</p>
+
+      <p>I think about the good times with long-gone lovers or dear friends or even former frenemies and try hard to dwell on the realness of the shared history, instead of the unfortunate infiniteness of the “what-ifs.” Boating trips, walks on rocky beaches, conversations in beds. All of it.</p>
+
+      <p>Is there a real lesson in this…? To be honest I’m not sure. I would say that I’ve maybe always been a little too good at letting friendships wane from the active to the past stage for “letting go” to be a message here. But maybe just that good people will find good people, and to give yourself grace when someone who you once loved and shared lots of wonderful times with is no longer in your life. Give yourself grace to be present in the overwhelming good of this stage, while thanking the past for getting you here.</p>
+
+      <p>In an email sent to me after reconnecting with a colleague (and dare I say friend?) over lunch while in town for a conference, one of these individuals, who maybe left one of the deepest marks on me in a short time of knowing each other, wrote “I think of you often” and I have never found words to better describe the frustratingly beautiful concept of a mutual appreciation for time spent together, that can only rarely, if ever, be replicated.</p>
+
+      <p>But to so many who at one point have come into my life to then walk out of it—know that my life has windows: both to revisit our collective past and to possibly look towards a future with you in it. To all of you – I think of you often.</p>
+
+    </div>
+
+    <div style="margin-top: 30px;">
+      <a href="../blog.html" style="color: var(--accent-color); font-weight: bold;">← Back to Blog</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <a href="mailto:jmiles2@andrew.cmu.edu">jmiles2@andrew.cmu.edu</a>
+      <a href="https://www.linkedin.com/in/milesjillian">LinkedIn</a>
+      <a href="https://github.com/jillian-miles">GitHub</a>
+    </div>
+    <div class="container">© 2025 Jillian Miles</div>
+  </footer>
+</body>
+</html>
