@@ -1,1 +1,180 @@
+s<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jillian Miles - Personal Blog</title>
+    <style>
+        :root {
+            --primary-color: #2F4F4F; /* Dark Slate Gray */
+            --secondary-color: #556B2F; /* Dark Olive Green */
+            --accent-color: #6B8E23; /* Olive Drab */
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+        a:visited { color: #556B2F }
 
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            align-items: center; /* Keeps the image and text aligned */
+            justify-content: center; /* Centers everything horizontally */
+            text-align: center; /* Centers the text */
+            gap: 20px; /* Adds spacing between the image and text */
+            flex-wrap: wrap; /* Ensures responsiveness */
+        }
+        
+        header div {
+            flex: 1; /* Allows the text block to take up available space */
+            text-align: center; /* Centers text inside its block */
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            margin-top: 10px;
+        }
+
+        .featured-content {
+            background-color: var(--light-bg);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+
+        .publication {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-left: 3px solid var(--accent-color);
+            background-color: var(--light-bg);
+        }
+
+        .publication h3 {
+            margin: 0 0 10px 0;
+            color: var(--primary-color);
+        }
+
+        .publication .meta {
+            font-style: italic;
+            color: var(--secondary-color);
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+
+
+<body>
+  <header class="container">
+      <img src="images/profilepic" alt="Jillian Miles" class="profile-pic">
+      <div>
+          <h1>Jillian Miles</h1>
+          <div class="subtitle">Workers and Local Communities | Energy Transition | Research for Policy</div>
+          <nav>
+              <a href="index.html">Home</a>
+              <a href="publications.html">Research</a>
+              <a href="resumes.html">CV & Resumés</a>
+              <a href="misc.html">Misc. Endeavors</a>
+          </nav>
+      </div>
+
+  </header>
+    
+  <main class="container">
+    <h2>Workforce and the Energy Transition</h2>
+    
+    <div class="publication">
+      <h3>Simulating regional workforce impacts of decarbonizing integrated steelmaking</h3>
+      <div class="meta">J. Miles, C. Combemale, V.J. Karplus, P. Chris Pistorius</div>
+      <div class="meta">Proceedings of the National Academy of Sciences, May 2025</div>
+      <p>An insufficient understanding of the workforce implications of deep decarbonization may be limiting the pace of transition, especially in regions specialized in fossil fuel-intensive heavy industries. We introduce a generalizable methodology for assessing workforce implications of industrial decarbonization within regions that face a choice between shutting down or investing in low-carbon alternatives and apply it to integrated steelmaking in Southwest Pennsylvania. We estimate that decarbonized processes in iron and steelmaking will be far less labor intensive, requiring only a quarter of the jobs; among workers not transferred within industry (averaging 2,140 jobs per trial), we look to match occupations within the regional economy assuming near-term job growth projections. Production workers have the most limited transferability into the broader market. </p>
+      <a href="https://www.pnas.org/doi/10.1073/pnas.2419294122"> Read Full Paper</a>
+    </div>
+
+    <div class="publication">
+      <h3>When the Energy Transition Comes to Town</h3>
+      <div class="meta">J.E. Miles, C. Combemale, V.J. Karplus</div>
+      <div class="meta">Issues in Science and Technology, 2023</div>
+      <p>Thousands of American towns are losing jobs in fossil fuels. More sophisticated analytical tools could help communities marshal their resources for a better future. </p>
+      <a href="https://issues.org/energy-transition-analytical-tools-miles-combemale-karplus/"> Read Full Paper</a>
+    </div>
+    
+    <h2>Prior Work</h2>
+
+    
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <a href="mailto:jmiles2@andrew.cmu.edu">jmiles2@andrew.cmu.edu</a>
+      <a href="https://www.linkedin.com/in/milesjillian">LinkedIn</a>
+      <a href="https://github.com/jillian-miles">GitHub</a>
+    </div>
+    <div class="container">© 2025 Jillian Miles</div>
+  </footer>
+</body>
+</html>
