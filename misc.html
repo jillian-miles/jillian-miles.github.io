@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miscellaneous Endeavors - Jillian Miles</title>
+    <title>Jillian Miles - PhD Student at CMU EPP</title>
     <style>
         :root {
-            --primary-color: #2F4F4F;
-            --secondary-color: #556B2F;
-            --accent-color: #6B8E23;
+            --primary-color: #2F4F4F; /* Dark Slate Gray */
+            --secondary-color: #556B2F; /* Dark Olive Green */
+            --accent-color: #6B8E23; /* Olive Drab */
             --text-color: #333;
             --light-bg: #f8f9fa;
         }
 
-        a:{ color: #556B2F}
-
-        a:visited { color: #556B2F}
+        a:visited { color: #556B2F }
 
         body {
             font-family: 'Georgia', serif;
@@ -29,28 +27,48 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 5px;
+            padding: 20px;
         }
 
         header {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            align-items: center; /* Keeps the image and text aligned */
+            justify-content: center; /* Centers everything horizontally */
+            text-align: center; /* Centers the text */
+            gap: 20px; /* Adds spacing between the image and text */
+            flex-wrap: wrap; /* Ensures responsiveness */
+        }
+        
+        header div {
+            flex: 1; /* Allows the text block to take up available space */
+            text-align: center; /* Centers text inside its block */
         }
 
-        header img {
-            width: 80px;
-            height: 80px;
+        .profile-pic {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
         }
 
-        header div {
-            flex: 1;
-            text-align: center;
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid var(--accent-color);
         }
 
         h1 {
@@ -65,45 +83,40 @@
             margin-top: 10px;
         }
 
-        .section {
+        .featured-content {
             background-color: var(--light-bg);
-            padding: 5px;
+            padding: 20px;
             border-radius: 5px;
-            margin-top: 5px;
+            margin: 30px 0;
         }
 
-        .section h2 {
-            color: var(--primary-color);
-            font-size: 2em;
-        }
-
-        .section p {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-        }
-
-        .links {
-            display: flex;
-            gap: 30px;
-            margin-top: 5px;
-            justify-content: space-between;
-        }
-
-        .link-card {
+        .publication {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-left: 3px solid var(--accent-color);
             background-color: var(--light-bg);
-            padding: 5px;
-            border-radius: 5px;
-            width: 30%;
         }
 
-        .link-card h3 {
-            font-size: 1.6em;
+        .publication h3 {
+            margin: 0 0 10px 0;
             color: var(--primary-color);
         }
 
-        .link-card p {
+        .publication .meta {
+            font-style: italic;
             color: var(--secondary-color);
-            font-size: 1.1em;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
         }
 
         footer {
@@ -118,8 +131,14 @@
     <header class="container">
         <img src="images/profilepic" alt="Jillian Miles" class="profile-pic">
         <div>
-            <h1>Jillian E. Miles</h1>
+            <h1>Jillian Miles</h1>
             <div class="subtitle">Workers and Local Communities | Energy Transition | Research for Policy</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="publications.html">Research</a>
+                <a href="resumes.html">CV & Resumés</a>
+                <a href="misc.html">Misc. Endeavors</a>
+            </nav>
         </div>
     </header>
 
@@ -127,7 +146,7 @@
         <!-- Overview Box -->
         <div class="section">
             <h2>Overview</h2>
-            <p>Welcome to the miscellaneous endeavors section of my website. Here, I share some of my other passions and creative pursuits outside of my research. You will find details about my work in stained glass, choreography, and the personal blog where I reflect on various interests.</p>
+            <p>Welcome to my creative endeavors. Here, I share some of my other passions outside of my research. You will find details about my work in stained glass, choreography, and the personal blog below.</p>
         </div>
 
         <!-- Links Section -->
@@ -149,7 +168,7 @@
             <!-- Blog Section -->
             <div class="link-card">
                 <h3>Blog</h3>
-                <p>Check out my blog, where I share reflections on creativity, life, and other interests.</p>
+                <p>Check out my blog, where I am trying to discuss life lessons I've learned in my 20s.</p>
                 <a href="30before30.html">Visit Blog</a>
             </div>
         </div>
