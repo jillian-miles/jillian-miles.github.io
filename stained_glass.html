@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jillian Miles - Stained Glass Gallery</title>
+    <style>
+        :root {
+            --primary-color: #2F4F4F; /* Dark Slate Gray */
+            --secondary-color: #556B2F; /* Dark Olive Green */
+            --accent-color: #6B8E23; /* Olive Drab */
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        a:visited { color: #556B2F }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        header div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            margin-top: 10px;
+        }
+
+        .project {
+            margin-bottom: 40px;
+            padding: 25px;
+            border-left: 3px solid var(--accent-color);
+            background-color: var(--light-bg);
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            margin: 0 0 15px 0;
+            color: var(--primary-color);
+            font-size: 1.5em;
+        }
+
+        .project-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        .project-meta .meta-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-meta .meta-label {
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 3px;
+        }
+
+        .project-meta .meta-value {
+            color: var(--text-color);
+        }
+
+        .project-description {
+            margin: 20px 0;
+            line-height: 1.7;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .image-placeholder {
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+            border: 2px dashed var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            color: var(--secondary-color);
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .image-placeholder:hover {
+            background: linear-gradient(135deg, #dee2e6 0%, #ced4da 100%);
+            transform: translateY(-2px);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-image:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .intro-section {
+            background-color: var(--light-bg);
+            padding: 25px;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            .project-meta {
+                grid-template-columns: 1fr;
+            }
+            
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <img src="images/profilepic" alt="Jillian Miles" class="profile-pic">
+        <div>
+            <h1>Jillian Miles</h1>
+            <div class="subtitle">Workers and Local Communities | Energy Transition | Research for Policy</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="publications.html">Research</a>
+                <a href="resumes.html">CV & Resumés</a>
+                <a href="misc.html">Misc. Endeavors</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Stained Glass Gallery</h2>
+        
+        <div class="intro-section">
+            <p>Welcome to my stained glass journey. What started as a creative outlet has become a passionate exploration of light, color, and craftsmanship. Each piece represents hours of careful planning, cutting, and soldering, transforming sheets of colored glass into luminous works of art. Below you'll find my recent projects, each with its own story and creative challenges.</p>
+        </div>
+
+        <!-- Dragonfly Project -->
+        <div class="project">
+            <h3>Dragonfly</h3>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Date Completed</div>
+                    <div class="meta-value">[Date]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Pattern Credit</div>
+                    <div class="meta-value">[Pattern Source/Designer]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Technique</div>
+                    <div class="meta-value">[Lead came/Copper foil/etc.]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Dimensions</div>
+                    <div class="meta-value">[Size]</div>
+                </div>
+            </div>
+            <div class="project-description">
+                <p>[Description of the dragonfly project - inspiration, challenges, techniques used, what you learned, etc.]</p>
+            </div>
+            <div class="image-gallery">
+                <div class="image-placeholder">Dragonfly Image 1<br>Replace with actual image</div>
+                <div class="image-placeholder">Dragonfly Image 2<br>Replace with actual image</div>
+                <div class="image-placeholder">Dragonfly Image 3<br>Replace with actual image</div>
+                <div class="image-placeholder">Dragonfly Image 4<br>Replace with actual image</div>
+            </div>
+        </div>
+
+        <!-- Bird Project -->
+        <div class="project">
+            <h3>Bird</h3>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Date Completed</div>
+                    <div class="meta-value">[Date]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Pattern Credit</div>
+                    <div class="meta-value">[Pattern Source/Designer]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Technique</div>
+                    <div class="meta-value">[Lead came/Copper foil/etc.]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Dimensions</div>
+                    <div class="meta-value">[Size]</div>
+                </div>
+            </div>
+            <div class="project-description">
+                <p>[Description of the bird project - what type of bird, color choices, any special techniques or challenges, etc.]</p>
+            </div>
+            <div class="image-gallery">
+                <div class="image-placeholder">Bird Image 1<br>Replace with actual image</div>
+                <div class="image-placeholder">Bird Image 2<br>Replace with actual image</div>
+                <div class="image-placeholder">Bird Image 3<br>Replace with actual image</div>
+            </div>
+        </div>
+
+        <!-- Tulip Project -->
+        <div class="project">
+            <h3>Tulip</h3>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Date Completed</div>
+                    <div class="meta-value">[Date]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Pattern Credit</div>
+                    <div class="meta-value">[Pattern Source/Designer]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Technique</div>
+                    <div class="meta-value">[Lead came/Copper foil/etc.]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Dimensions</div>
+                    <div class="meta-value">[Size]</div>
+                </div>
+            </div>
+            <div class="project-description">
+                <p>[Description of the tulip project - inspiration, color palette choices, any particular challenges with the floral design, etc.]</p>
+            </div>
+            <div class="image-gallery">
+                <div class="image-placeholder">Tulip Image 1<br>Replace with actual image</div>
+                <div class="image-placeholder">Tulip Image 2<br>Replace with actual image</div>
+                <div class="image-placeholder">Tulip Image 3<br>Replace with actual image</div>
+                <div class="image-placeholder">Tulip Image 4<br>Replace with actual image</div>
+            </div>
+        </div>
+
+        <!-- Traditional Panel Project -->
+        <div class="project">
+            <h3>Traditional Panel</h3>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Date Completed</div>
+                    <div class="meta-value">[Date]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Pattern Credit</div>
+                    <div class="meta-value">[Pattern Source/Designer]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Technique</div>
+                    <div class="meta-value">[Lead came/Copper foil/etc.]</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Dimensions</div>
+                    <div class="meta-value">[Size]</div>
+                </div>
+            </div>
+            <div class="project-description">
+                <p>[Description of the traditional panel - perhaps your first piece, learning experience, traditional techniques used, etc.]</p>
+            </div>
+            <div class="image-gallery">
+                <div class="image-placeholder">Traditional Panel Image 1<br>Replace with actual image</div>
+                <div class="image-placeholder">Traditional Panel Image 2<br>Replace with actual image</div>
+                <div class="image-placeholder">Traditional Panel Image 3<br>Replace with actual image</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <a href="mailto:jmiles2@andrew.cmu.edu">jmiles2@andrew.cmu.edu</a>
+            <a href="https://www.linkedin.com/in/milesjillian">LinkedIn</a>
+            <a href="https://github.com/jillian-miles">GitHub</a>
+        </div>
+        <div class="container">
+            © 2025 Jillian Miles
+        </div>
+    </footer>
+</body>
+</html>
