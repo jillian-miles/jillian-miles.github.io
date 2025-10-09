@@ -34,16 +34,16 @@
 
         header {
             display: flex;
-            align-items: center; /* Keeps the image and text aligned */
-            justify-content: center; /* Centers everything horizontally */
-            text-align: center; /* Centers the text */
-            gap: 20px; /* Adds spacing between the image and text */
-            flex-wrap: wrap; /* Ensures responsiveness */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
         
         header div {
-            flex: 1; /* Allows the text block to take up available space */
-            text-align: center; /* Centers text inside its block */
+            flex: 1;
+            text-align: center;
         }
 
         .profile-pic {
@@ -127,16 +127,54 @@
             margin-top: 60px;
             border-top: 1px solid #eee;
         }
+
+        /* --- Added for About section with photo --- */
+        .about-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .about-photo {
+            width: 320px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .about-photo {
+                width: 80%;
+                max-width: 400px;
+            }
+        }
     </style>
 </head>
 <body>
     <main class="container">
         <h2>About Me</h2>
-        <div class="featured-content">
-            <p>I'm currently a 4th year PhD Candidate in Engineering and Public Policy at Carnegie Mellon University where I study the labor and community implications of the energy transition. Largely, I do this through advancing the method of skills-matching to be better equipped to handle complicated technology and processes as inputs, understand labor strain and resilience geographically as an output, and center communities place-based policy research.</p>
-            <p>I care deeply about ensuring that academic research goes beyond the ivory tower and makes a difference for the people it serves. All of my research has specific industry, geographic, or policy focuses, and aims to make recommendations for future policy development on some level, and I hope it can inform a more equitable energy transition overall. </p>
-            <p>Prior to starting my PhD, I was a consultant for several federal agencies, including the Department of State, IRS, and TSA. My prior research collaborators from work done at my alma mater, The George Washington University, also include MIT, USAID, CDC/ASPR, and FEMA. </p>
-            <p>I do my best to stay creative and enjoy pursuits outside of research, including dancing & choreographing, stained glass, writing, and following niche sports. </p>
+        <div class="about-container">
+            <div class="about-text featured-content">
+                <p>I'm currently a 4th year PhD Candidate in Engineering and Public Policy at Carnegie Mellon University where I study the labor and community implications of the energy transition. Largely, I do this through advancing the method of skills-matching to be better equipped to handle complicated technology and processes as inputs, understand labor strain and resilience geographically as an output, and center communities place-based policy research.</p>
+                <p>I care deeply about ensuring that academic research goes beyond the ivory tower and makes a difference for the people it serves. All of my research has specific industry, geographic, or policy focuses, and aims to make recommendations for future policy development on some level, and I hope it can inform a more equitable energy transition overall. </p>
+                <p>Prior to starting my PhD, I was a consultant for several federal agencies, including the Department of State, IRS, and TSA. My prior research collaborators from work done at my alma mater, The George Washington University, also include MIT, USAID, CDC/ASPR, and FEMA. </p>
+                <p>I do my best to stay creative and enjoy pursuits outside of research, including dancing & choreographing, stained glass, writing, and following niche sports. </p>
+            </div>
+            <img src="headshot25.png" alt="Jillian Miles" class="about-photo">
         </div>
 
         <h2>Latest Publication</h2>
@@ -145,7 +183,7 @@
             <div class="meta">J. Miles, C. Combemale, V.J. Karplus, P. Chris Pistorius</div>
             <div class="meta">Proceedings of the National Academy of Sciences, May 2025</div>
             <p>An insufficient understanding of the workforce implications of deep decarbonization may be limiting the pace of transition, especially in regions specialized in fossil fuel-intensive heavy industries. We introduce a generalizable methodology for assessing workforce implications of industrial decarbonization within regions that face a choice between shutting down or investing in low-carbon alternatives and apply it to integrated steelmaking in Southwest Pennsylvania. We estimate that decarbonized processes in iron and steelmaking will be far less labor intensive, requiring only a quarter of the jobs; among workers not transferred within industry (averaging 2,140 jobs per trial), we look to match occupations within the regional economy assuming near-term job growth projections. Production workers have the most limited transferability into the broader market. </p>
-            <a href="https://www.pnas.org/doi/10.1073/pnas.2419294122"> Read Full Paper</a>
+            <a href="https://www.pnas.org/doi/10.1073/pnas.2419294122">Read Full Paper</a>
         </div>
     </main>
 
