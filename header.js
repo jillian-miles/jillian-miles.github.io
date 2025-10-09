@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="index.html">Home</a>
                     <a href="publications.html">Research</a>
                     <a href="resumes.html">CV & Resumés</a>
-                    <a href="misc.html">Other Endeavors</a>
+                    <a href="news.html">In the News</a>
+                    <a href="stained_glass.html">Stained Glass</a>
                 </nav>
             </div>
         </header>
