@@ -6,24 +6,53 @@
     <title>News & Features - Jillian Miles</title>
     <script src="header.js"></script>
     <style>
-        :root {
-            --primary-color: #2F4F4F;
-            --secondary-color: #556B2F;
-            --accent-color: #6B8E23;
-            --text-color: #333;
-            --light-bg: #f8f9fa;
+        header {
+            display: flex;
+            align-items: center; /* Keeps the image and text aligned */
+            justify-content: center; /* Centers everything horizontally */
+            text-align: center; /* Centers the text */
+            gap: 20px; /* Adds spacing between the image and text */
+            flex-wrap: wrap; /* Ensures responsiveness */
+        }
+        
+        header div {
+            flex: 1; /* Allows the text block to take up available space */
+            text-align: center; /* Centers text inside its block */
+        }
+        
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        
+        nav a:hover {
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            margin-top: 10px;
         }
 
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.8;
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            background-color: white;
-        }
-
-        a:visited { color: var(--secondary-color); }
 
         .container {
             width: 90%;
