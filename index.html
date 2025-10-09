@@ -155,9 +155,12 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
 
-        .text-inner p {
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
+        .text-inner p:first-child {
+            margin-top: 2;  /* flush with top of box */
+        }
+        
+        .text-inner p:last-child {
+            margin-bottom: 2; /* flush with bottom of box */
         }
 
         
