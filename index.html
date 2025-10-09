@@ -130,9 +130,10 @@
 
         /* --- Added for About section with photo --- */
         /* --- About section with photo --- */
+        /* --- About Section CSS --- */
         .about-container {
             display: flex;
-            align-items: flex-start;      /* aligns items to top */
+            align-items: flex-start;      /* aligns the tops */
             justify-content: space-between;
             gap: 40px;
             flex-wrap: wrap;
@@ -142,14 +143,16 @@
         .about-text {
             flex: 1;
             min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;  /* ensures top alignment of the gray box */
         }
         
-        .about-text.featured-content {
-        padding: 0;  /* remove padding to align with photo */
-        }
-
-        .about-text p:first-child {
-            margin-top: 0;               /* removes extra top margin */
+        .text-inner {
+            padding: 20px;                /* gray box padding */
+            background-color: var(--light-bg);
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
         
         .about-photo {
@@ -158,8 +161,26 @@
             border-radius: 10px;
             object-fit: cover;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            align-self: flex-start;      /* ensures photo aligns with top of text */
+            align-self: flex-start;       /* top-align with text box */
         }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-photo {
+        width: 80%;
+        max-width: 400px;
+        margin-top: 20px;  /* optional spacing below text on mobile */
+    }
+    .text-inner {
+        width: 100%;
+    }
+}
+
 
 
         @media (max-width: 768px) {
@@ -179,11 +200,14 @@
     <main class="container">
         <h2>About Me</h2>
         <div class="about-container">
-            <div class="about-text featured-content">
-                <p>I'm currently a 4th year PhD Candidate in Engineering and Public Policy at Carnegie Mellon University where I study the labor and community implications of the energy transition. Largely, I do this through advancing the method of skills-matching to be better equipped to handle complicated technology and processes as inputs, understand labor strain and resilience geographically as an output, and center communities place-based policy research.</p>
-                <p>I care deeply about ensuring that academic research goes beyond the ivory tower and makes a difference for the people it serves. All of my research has specific industry, geographic, or policy focuses, and aims to make recommendations for future policy development on some level, and I hope it can inform a more equitable energy transition overall. </p>
-                <p>Prior to starting my PhD, I was a consultant for several federal agencies, including the Department of State, IRS, and TSA. My prior research collaborators from work done at my alma mater, The George Washington University, also include MIT, USAID, CDC/ASPR, and FEMA. </p>
-                <p>I do my best to stay creative and enjoy pursuits outside of research, including dancing & choreographing, stained glass, writing, and following niche sports. </p>
+            <div class="about-text">
+                <div class="text-inner">
+                    <p>I'm currently a 4th year PhD Candidate in Engineering and Public Policy at Carnegie Mellon University where I study the labor and community implications of the energy transition. Largely, I do this through advancing the method of skills-matching to be better equipped to handle complicated technology and processes as inputs, understand labor strain and resilience geographically as an output, and center communities place-based policy research.</p>
+                    <p>I care deeply about ensuring that academic research goes beyond the ivory tower and makes a difference for the people it serves. All of my research has specific industry, geographic, or policy focuses, and aims to make recommendations for future policy development on some level, and I hope it can inform a more equitable energy transition overall. </p>
+                    <p>Prior to starting my PhD, I was a consultant for several federal agencies, including the Department of State, IRS, and TSA. My prior research collaborators from work done at my alma mater, The George Washington University, also include MIT, USAID, CDC/ASPR, and FEMA. </p>
+                    <p>I do my best to stay creative and enjoy pursuits outside of research, including dancing & choreographing, stained glass, writing, and following niche sports. </p>
+           
+                </div>
             </div>
             <img src="images/JMHeadshot2025.png" alt="Jillian Miles" class="about-photo">
         </div>
